@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rowdies', cursive;
+    background: linear-gradient(92deg,#54bba5, #014637);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coinsHead {
+    font-size: 35px;
+    margin-left: 35px;
+    color: antiquewhite;
+}
+
+.pointsHead {
+    display: flex;
+    justify-content:flex-end;
+    font-size: 35px;
+    margin-right: 35px;
+    color: antiquewhite;
+}
+
+.disHead {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.disImg {
+    width: 300px;
+    height: 450px;
+    border: 10px solid #001d17;
+    border-radius: 10%;
+    -webkit-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    cursor: pointer;
+}
+
+button {
+    padding: 0;
+    border-radius: 20px;
+    background: #000;
+    -webkit-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+}
+
+/* .headingHead {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    background:#002c23;
+    padding: 25px;
+    font-size: 20px;
+    color: antiquewhite;
+    border-radius: 10%;
+    cursor: pointer;
+    border: 10px solid #001d17;
+    -webkit-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    transition: 0.5s linear;
+}
+
+.heading:hover {
+    background:#001612;
+}
+
+.headingHead.hidden {
+    display: none;
+}
+
+.heading.hidden {
+    display: none;
+}
+
+.headingHead2.show {    
+    width: 240px;
+    display: block;
+    margin-left: 39%;
+}
+
+.heading2.show {
+    width: 240px;
+    background:#002c23;
+    padding: 25px;
+    font-size: 20px;
+    color: antiquewhite;
+    border-radius: 10%;
+    cursor: pointer;
+    border: 10px solid #001d17;
+    -webkit-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    transition: 0.5s linear;
+    display: block;
+}
+
+.heading2:hover {
+    background:#001612;
+}
+
+.headingHead2 {
+    display: none;
+}
+
+.heading2 {
+    display: none;
+} */
+
+/* zdjęcie orka */
