@@ -6,11 +6,15 @@ const DISIMG = document.querySelector('.disImg');
 const POINTS = document.querySelector('.points');
 const COINS = document.querySelector('.coins');
 const TEST = document.querySelector('.cos');
+const TEST2 = document.querySelector('.cos2');
 const SMOK = document.querySelector('.smok');
 const MONSTER1 = document.querySelector('.monster1');
 
 let pointsLogic = 0;
 let coinsLogic = 0;
+
+pointsLogic = localStorage.getItem("points");
+coinsLogic = localStorage.getItem("coins");
 
 POINTS.innerHTML = pointsLogic;
 COINS.innerHTML = coinsLogic;
