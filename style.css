@@ -129,6 +129,10 @@ button {
         margin-bottom: 100px;
         float: none;
     }
+
+    body {
+        background: #003d30;
+    }
 }
 
 /* .headingHead {
