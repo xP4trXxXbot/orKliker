@@ -14,12 +14,10 @@ AXE.addEventListener('click', axe = () => {
                 pointsLogic++;
             }
             POINTS.innerHTML = pointsLogic;
-            if(pointsLogic % 20 == 0 || pointsLogic % 4 == 0 || pointsLogic % 7 == 0 || pointsLogic % 3 == 0 || pointsLogic % 5 == 0 || pointsLogic % 9 == 0 || pointsLogic % 10 == 0) {
                 for (let i = 0; i < 20; i++) {
                     coinsLogic++;
                 }
-                COINS.innerHTML = coinsLogic;
-            }
+            COINS.innerHTML = coinsLogic;
             if (licznik === 60) {
                 clearInterval(Interval);
             }
