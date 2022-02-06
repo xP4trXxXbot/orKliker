@@ -122,10 +122,17 @@ button {
 /* responsywność */
 
 @media screen and (max-width: 800px){
+
+    .shopHeadMain {
+        display: flex;
+        justify-content: center;
+    }
     .shop {
         display: block;
-        margin-left: 10%;
-        margin-right: 20%;
+        width: 370px;
+        height: 470px;
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 100px;
         float: none;
     }
