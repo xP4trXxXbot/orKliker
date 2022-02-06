@@ -52,7 +52,12 @@ section {
     background: rgb(4, 134, 91);
     border-radius: 20px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shopSelf {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* sklep info */
