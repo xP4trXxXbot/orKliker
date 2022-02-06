@@ -124,6 +124,44 @@ button {
     box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
 }
 
+/* zapisywanie */
+.saveHead {
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.cos {
+    width: 300px;
+    height: 40px;
+    background: rgb(1, 98, 66);
+    color: antiquewhite;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    transition: 0.3s linear;
+}
+
+.cos2 {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgb(1, 98, 66);
+    color: antiquewhite;
+    border-radius: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    transition: 0.3s linear;
+}
+
+.cos:hover, .cos2:hover {
+    background: rgb(3, 160, 107);
+}
+
+
 /* responsywność */
 
 @media screen and (max-width: 800px){
@@ -140,6 +178,23 @@ button {
         margin-right: 0;
         margin-bottom: 100px;
         float: none;
+    }
+
+    .cos {
+        margin-top: 45px;
+    }
+
+    .cos2 {
+        margin-bottom: 20px;
+    }
+
+    .cos, .cos2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .saveHead {
+        margin-left: 0;
     }
 
     body {
