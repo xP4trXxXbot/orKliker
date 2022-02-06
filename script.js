@@ -14,9 +14,8 @@ let pointsLogic = 0;
 let coinsLogic = 0;
 
 pointsLogic = localStorage.getItem("points");
-coinsLogic = localStorage.getItem("coins");
-
 POINTS.innerHTML = pointsLogic;
+coinsLogic = localStorage.getItem("coins");
 COINS.innerHTML = coinsLogic;
 
 //logika
@@ -101,9 +100,8 @@ const pointslvl7 = () => {
 };
 
 const coins = () => {
-    if(pointsLogic > 0)
     if(pointsLogic % 20 == 0 || pointsLogic % 4 == 0 || pointsLogic % 7 == 0) {
-        coinsLogic += 1;
+        coinsLogic++;
         COINS.innerHTML = coinsLogic;
     }
 };
