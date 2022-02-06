@@ -52,7 +52,7 @@ section {
     background: rgb(4, 134, 91);
     border-radius: 20px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 170px 170px;
 }
 
 .shopSelf {
@@ -83,6 +83,24 @@ section {
 }
 
 .monster1:hover ~ .diabelInfo {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: rgb(1, 75, 50);
+    border: 3px solid rgb(0, 51, 34);
+    border-radius: 20px 20px;
+    color: antiquewhite;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-top: 5px;
+    position: absolute;
+}
+
+.axeInfo {
+    display: none;
+}
+
+.axe:hover ~ .axeInfo {
     display: block;
     width: 200px;
     height: 50px;
