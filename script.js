@@ -3,20 +3,26 @@ const HEADING2 = document.querySelector('.heading2');
 const HEADING2HEAD = document.querySelector('.headingHead2');
 const DISHEAD = document.querySelector('.disHead');
 const DISIMG = document.querySelector('.disImg');
+const DIS1IMG = document.querySelector('.dis1Img')
 const POINTS = document.querySelector('.points');
 const COINS = document.querySelector('.coins');
 const TEST = document.querySelector('.cos');
 const TEST2 = document.querySelector('.cos2');
+const LOADSKIN = document.querySelector('.loadSkin');
+const DELETESKIN = document.querySelector('.deleteSkin');
 const SMOK = document.querySelector('.smok');
 const MONSTER1 = document.querySelector('.monster1');
+const SKIN1 = document.querySelector('.skin1');
 
 let pointsLogic = 0;
 let coinsLogic = 0;
+let changeSkin = '0';
 
 pointsLogic = localStorage.getItem("points");
 POINTS.innerHTML = pointsLogic;
 coinsLogic = localStorage.getItem("coins");
 COINS.innerHTML = coinsLogic;
+changeSkin = localStorage.getItem("changeSkinLS");
 
 //logika
 const basicPoints = () => {
@@ -124,7 +130,37 @@ const monster1 = () => {
     }
 };
 
+const skin1 = () => {
+    if (coinsLogic >= 10000) {
+        coinsLogic = coinsLogic - 10000;
+        COINS.innerHTML = coinsLogic;
+        changeSkin = 'true';
+        localStorage.setItem("changeSkinLS", changeSkin);
+        if(changeSkin == 'true') {
+            DISIMG.classList.add('hidden');
+            DIS1IMG.classList.add('show');
+        }
+    }
+};
+
+const skin1Load = () => {
+    if(changeSkin == 'true') {
+        DISIMG.classList.add('hidden');
+        DIS1IMG.classList.add('show');
+    }
+    else console.log("test");
+};
+
 DISIMG.addEventListener('click', addPoints = () => {
+    basicPoints();
+    pointslvl2();
+    pointslvl3();
+    pointslvl4();
+    pointslvl5();
+    coins();
+});
+
+DIS1IMG.addEventListener('click', addPoints = () => {
     basicPoints();
     pointslvl2();
     pointslvl3();
@@ -135,7 +171,9 @@ DISIMG.addEventListener('click', addPoints = () => {
 
 SMOK.addEventListener('click', smok);
 MONSTER1.addEventListener('click', monster1);
+SKIN1.addEventListener('click', skin1);
 
+skin1Load();
 
 
 

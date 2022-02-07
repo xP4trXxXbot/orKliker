@@ -114,6 +114,24 @@ section {
     position: absolute;
 }
 
+.skin1Info {
+    display: none;
+}
+
+.skin1:hover ~ .skin1Info {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: rgb(1, 75, 50);
+    border: 3px solid rgb(0, 51, 34);
+    border-radius: 20px 20px;
+    color: antiquewhite;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-top: 5px;
+    position: absolute;
+}
+
 
 /* klikanie disa */
 .disHead {
@@ -123,6 +141,26 @@ section {
 }
 
 .disImg {
+    width: 300px;
+    height: 450px;
+    border: 10px solid #001d17;
+    border-radius: 10%;
+    -webkit-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    box-shadow: 0px 6px 18px -1px rgba(66, 68, 90, 1);
+    cursor: pointer;
+}
+
+.disImg.hidden {
+    display: none;
+}
+
+.dis1Img {
+    display: none;
+}
+
+.dis1Img.show {
+    display: block;
     width: 300px;
     height: 450px;
     border: 10px solid #001d17;
